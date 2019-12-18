@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
 import { makeStyles, useTheme } from '@material-ui/core/styles';
+import blue from '@material-ui/core/colors/blue'
 
 import Container from '@material-ui/core/Container';
 import Typography from '@material-ui/core/Typography';
@@ -16,6 +17,12 @@ const useStyles = makeStyles(theme => ({
   container: {
     paddingTop: theme.spacing(8),
     position: 'relative'
+  },
+  generated: {
+    color: blue[400],
+  },
+  typography: {
+    marginBottom: theme.spacing(1),
   },
   regenerateFab: {
     position: 'absolute',
@@ -57,24 +64,25 @@ function App() {
 
   return (
     <Container className={classes.container} maxWidth="sm">
-      <Typography variant="body1">
+      <Typography variant="body1" className={classes.typography}>
         In this Star Wars movie, our heroes return to take on the First Order
-        and new villain {villain} with help from their new friend {friend}.
+        and new villain <span className={classes.generated}>{villain}</span> with help from
+        their new friend <span className={classes.generated}>{friend}</span>.
       </Typography>
 
-      <Typography variant="body1">
-        Rey builds a new lightsaber with a {lightsaber} blade, and they head out
-        to confront the First Order's new superweapon, The {superweapon}, a
-        space station capable of {capability}.
+      <Typography variant="body1" className={classes.typography}>
+        Rey builds a new lightsaber with a <span className={classes.generated}>{lightsaber}</span> blade, and they head out
+        to confront the First Order's new superweapon, The <span className={classes.generated}>{superweapon}</span>, a
+        space station capable of <span className={classes.generated}>{capability}</span>.
       </Typography>
 
-      <Typography variant="body1">
-        They unexpectedly join forces with their old enemy, {enemy}, and
-        destroy the superweapon in a battle featuring {battle}.
+      <Typography variant="body1" className={classes.typography}>
+        They unexpectedly join forces with their old enemy, <span className={classes.generated}>{enemy}</span>, and
+        destroy the superweapon in a battle featuring <span className={classes.generated}>{battle}</span>.
       </Typography>
 
-      <Typography variant="body2">
-        P.S. Rey's parents are {parentX} and {parentY}.
+      <Typography variant="body2" className={classes.typography}>
+        P.S. Rey's parents are <span className={classes.generated}>{parentX}</span> and <span className={classes.generated}>{parentY}</span>.
       </Typography>
 
       <Fab className={classes.regenerateFab} color="primary" onClick={() => setRegenerate(true)}>
