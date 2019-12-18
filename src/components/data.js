@@ -14,7 +14,7 @@ const battle = [
   'a bow that shoots little lightsaber-headed arrows',
   'x-wings and tie fighters dodging the giant letters of the opening crawl',
   'a sith educational display that uses force lightning to demonstrate the dielectric breakdown of air',
-  'kylo ren putting on another helmet over his smaller one',
+  'Kylo Ren putting on another helmet over his smaller one',
   'a sith car wash where the bristles on the brushes are little lightsabers'
 ];
 const parentsX = [ 'Luke', 'Leia', 'Han', 'Obi-Wan', 'a random junk trader' ];

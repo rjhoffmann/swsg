@@ -29,6 +29,10 @@ const useStyles = makeStyles(theme => ({
     bottom: theme.spacing(-8),
     right: theme.spacing(2),
   },
+  source: {
+    position: 'absolute',
+    bottom: theme.spacing(-8),
+  },
 }))
 
 function App() {
@@ -88,6 +92,10 @@ function App() {
       <Fab className={classes.regenerateFab} color="primary" onClick={() => setRegenerate(true)}>
         <RefreshIcon />
       </Fab>
+
+      <Typography variant="caption" className={classes.source}>
+        &lt;3 <a href="https://xkcd.com/2243/">XKCD</a>
+      </Typography>
     </Container>
   )
 }
