@@ -1,4 +1,4 @@
-const villans = [ 'Kyle Ren', 'Malloc', 'Darth Sebelus', 'Theranos', 'Lord Juul' ];
+const villains = [ 'Kyle Ren', 'Malloc', 'Darth Sebelus', 'Theranos', 'Lord Juul' ];
 const friends = [ 'Kim Spacemeasurer', 'Teen Yoda', 'Dab Tweetdeck', 'Yaz Progestin', 'Ti-83' ];
 const lightsabers = [ 'beige', 'ochre', 'mauve', 'aquamarine', 'taupe' ];
 const superweapons = [ 'Sun Obliterator', 'Moonsquisher', 'World Eater', 'Planet Zester', 'Superconducting Supercollider' ];
@@ -14,14 +14,14 @@ const battle = [
   'a bow that shoots little lightsaber-headed arrows',
   'x-wings and tie fighters dodging the giant letters of the opening crawl',
   'a sith educational display that uses force lightning to demonstrate the dielectric breakdown of air',
-  'kylo ren putton on another helmet over his smaller one',
+  'kylo ren putting on another helmet over his smaller one',
   'a sith car wash where the bristles on the brushes are little lightsabers'
 ];
 const parentsX = [ 'Luke', 'Leia', 'Han', 'Obi-Wan', 'a random junk trader' ];
 const parentsY = [ 'Poe', 'BB-8', 'Amilyn Holdo', 'Laura Dern', 'a random junk trader', 'that one droid from the jawa sandcrawler that says gonk' ];
 
 export default {
-  villans,
+  villains,
   friends,
   lightsabers,
   superweapons,

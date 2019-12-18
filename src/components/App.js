@@ -6,7 +6,7 @@ import Typography from '@material-ui/core/Typography';
 import data from './data';
 
 function App() {
-  const [villan, setVillan] = useState('');
+  const [villain, setVillain] = useState('');
   const [friend, setFriend] = useState('');
   const [lightsaber, setLightsaber] = useState('');
   const [superweapon, setSuperweapon] = useState('');
@@ -36,7 +36,7 @@ function App() {
 
   return (
     <div>
-      <p>In this Star Wars movie, our heroes return to take on the First Order and new villan {villan} with help from their new firend {friend}.</p>
+      <p>In this Star Wars movie, our heroes return to take on the First Order and new villain {villain} with help from their new friend {friend}.</p>
       <p>Rey builds a new lightsaber with a {lightsaber} blade, and they head out to confront the First Order's new superweapon, The {superweapon}, a space station capable of {capability}.</p>
       <p>They unexpectedly join forces with their old enemy {enemy} and destroy the superweapon in a battle featuring {battle}.</p>
       <br />
