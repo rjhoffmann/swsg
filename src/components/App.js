@@ -36,9 +36,10 @@ function App() {
 
   return (
     <div>
+      <button onClick={() => setRegenerate(true)}>regenerate</button>
       <p>In this Star Wars movie, our heroes return to take on the First Order and new villain {villain} with help from their new friend {friend}.</p>
       <p>Rey builds a new lightsaber with a {lightsaber} blade, and they head out to confront the First Order's new superweapon, The {superweapon}, a space station capable of {capability}.</p>
-      <p>They unexpectedly join forces with their old enemy {enemy} and destroy the superweapon in a battle featuring {battle}.</p>
+      <p>They unexpectedly join forces with their old enemy, {enemy}, and destroy the superweapon in a battle featuring {battle}.</p>
       <br />
       <p>P.S. Rey's parents are {parentX} and {parentY}</p>
     </div>
