@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-import { makeStyles, useTheme } from '@material-ui/core/styles';
+import { makeStyles } from '@material-ui/core/styles';
 import blue from '@material-ui/core/colors/blue'
 
 import Container from '@material-ui/core/Container';
