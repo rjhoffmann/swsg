@@ -52,7 +52,7 @@ function App() {
 
   useEffect(() => {
     if (regenerate) {
-      setVillain(_sample(data.villans));
+      setVillain(_sample(data.villains));
       setFriend(_sample(data.friends));
       setLightsaber(_sample(data.lightsabers));
       setSuperweapon(_sample(data.superweapons));
