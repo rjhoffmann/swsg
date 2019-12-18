@@ -1,11 +1,32 @@
 import React, { useEffect, useState } from 'react';
 
-import _sample from 'lodash/sample';
+import { makeStyles, useTheme } from '@material-ui/core/styles';
+
+import Container from '@material-ui/core/Container';
 import Typography from '@material-ui/core/Typography';
+import Fab from '@material-ui/core/Fab';
+
+import RefreshIcon from '@material-ui/icons/Refresh';
+
+import _sample from 'lodash/sample';
 
 import data from './data';
 
+const useStyles = makeStyles(theme => ({
+  container: {
+    paddingTop: theme.spacing(8),
+    position: 'relative'
+  },
+  regenerateFab: {
+    position: 'absolute',
+    bottom: theme.spacing(-8),
+    right: theme.spacing(2),
+  },
+}))
+
 function App() {
+  const classes = useStyles();
+
   const [villain, setVillain] = useState('');
   const [friend, setFriend] = useState('');
   const [lightsaber, setLightsaber] = useState('');
@@ -35,14 +56,17 @@ function App() {
   }, [regenerate]);
 
   return (
-    <div>
-      <button onClick={() => setRegenerate(true)}>regenerate</button>
+    <Container className={classes.container} maxWidth="sm">
       <p>In this Star Wars movie, our heroes return to take on the First Order and new villain {villain} with help from their new friend {friend}.</p>
       <p>Rey builds a new lightsaber with a {lightsaber} blade, and they head out to confront the First Order's new superweapon, The {superweapon}, a space station capable of {capability}.</p>
       <p>They unexpectedly join forces with their old enemy, {enemy}, and destroy the superweapon in a battle featuring {battle}.</p>
       <br />
       <p>P.S. Rey's parents are {parentX} and {parentY}</p>
-    </div>
+
+      <Fab className={classes.regenerateFab} color="primary" onClick={() => setRegenerate(true)}>
+        <RefreshIcon />
+      </Fab>
+    </Container>
   )
 }
 
