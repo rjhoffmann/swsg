@@ -19,7 +19,7 @@ const useStyles = makeStyles(theme => ({
     position: 'relative'
   },
   generated: {
-    color: blue[400],
+    color: blue[900],
   },
   typography: {
     marginBottom: theme.spacing(1),
