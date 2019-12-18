@@ -94,7 +94,7 @@ function App() {
       </Fab>
 
       <Typography variant="caption" className={classes.source}>
-        &lt;3 <a href="https://xkcd.com/2243/">XKCD</a>
+        &lt;3 <a href="https://xkcd.com/2243/">XKCD</a> | <a href="https://github.com/rjhoffmann/swsg">source</a>
       </Typography>
     </Container>
   )
